@@ -8,5 +8,6 @@ df <- fread(f,header = T, sep=";", na.strings = "?")
 df <- tbl_df(df)
 df$Date <- as.Date(df$Date,"%d/%m/%Y")
 names(df)[1] <- "date"
+names(df)[2] <- "time"
 #df1 <- filter(df,df$Date=="2007-02-01"|df$Date=="2007-02-02")
 df1 <- filter(df,date==dt1|date==dt2)
