@@ -1,6 +1,5 @@
 #source("load.R")
-#setwd("C:/Sammy/ExData_Plotting1")
-df2 <- mutate(df1,datetime = as.POSIXct(strptime(paste(date,time,sep=" "),"%Y-%m-%d %H:%M:%S")))
+setwd("C:/Sammy/ExData_Plotting1")
 png(file="plot2.png",height = 480, width = 480, units = "px")
 with(df2,plot(datetime,Global_active_power,type = "l"))
 dev.off()

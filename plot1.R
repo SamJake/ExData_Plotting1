@@ -1,4 +1,4 @@
-source("load.R")
+#source("load.R")
 setwd("C:/Sammy/ExData_Plotting1")
 png(file="plot1.png",height = 480, width = 480, units = "px")
 hist(df1$Global_active_power,col="red",main="Global Active Power",xlab = "Global Active Power (kilowatts)",xlim=c(0,6))
